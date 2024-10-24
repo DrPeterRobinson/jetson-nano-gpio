@@ -1,3 +1,10 @@
+# Modified!
+
+Thsi library has been modified to work inside Docker, when it is unable to use
+`/proc/device-tree/compatible` to determine the type of system on which it is
+running.  Instead, it *always* thinks it is running on a Jetson Nano (the contents
+of the file would be `nvidia,p3449-0000-b00+p3448-0000-b00`).
+
 # Jetson.GPIO - Linux for Tegra
 
 Jetson TX1, TX2, AGX Xavier, and Nano development boards contain a 40 pin GPIO
